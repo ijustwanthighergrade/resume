@@ -1,0 +1,548 @@
+#expe{
+    background-color: aliceblue;
+    margin: 0px ;
+    margin-right: -10%;
+    padding: 0px auto;
+    height: auto;
+    background-image: url("../images/greywood.jpg");
+    width: 100%;
+    /*border: white 4px solid;*/
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.workexp{
+    margin:0px auto;
+    width: 30%;
+    height: 80px;
+    color: rgb(0, 71, 151);
+    margin-top: 50px;
+    margin-left: 0px;
+    background-image: url("../images/unnamed.jpg");
+    border-top-right-radius: 20px;
+    font-weight: bold;
+    border-bottom-right-radius: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 3px 10px black;
+    font-size: 50px;
+    padding-top:20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    animation:skillwidthwork linear 1s ;
+    animation-iteration-count:initial;
+}
+.workexp:hover{
+    
+    transition: 1s;
+    animation: skillrotate  1s ease-out;
+    animation-iteration-count: infinite;
+    color: rgb(94, 180, 197);
+}
+@-webkit-keyframes skillwidthwork{
+    from{
+        width:0px;
+    }
+    to{
+        width: 30%;
+    }
+}
+.expetitle{
+    margin: 0px auto;
+    font-family: 'CASTELAR','COLONNA';
+}
+.max_work{
+    padding-top: 50px;
+    width: 100%;
+    height:900px;
+}
+.work ul{
+    list-style: none;
+    display: flex;
+}
+.workicon{
+    height: 80px; 
+    width: auto;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.workspace{
+    width: 80%;
+    height: 600px;
+    float: left;
+    margin: 0px auto;
+    padding: 10px;
+}
+.workimg{
+    width: 300px;
+    height: auto;
+    clear: both;
+    margin: 0px auto;
+    margin-left: 150px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px black;
+    transition: 1s;
+}
+.workimg:hover{
+    width: 400px;
+}
+.work li{
+    border-left: solid 5px rgb(31, 51, 105);
+    padding: 20px;
+    font-size: 35px;
+    margin: 10px;
+    font-weight: bold;
+    color: rgb(52, 68, 78) ;
+    float: left;
+    padding-left: 50px;
+}
+.work li:hover{
+    background-color: rgba(255, 240, 245, 0.555);
+    transition: 0.5s ease-in-out;
+}
+.work li div{
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+
+.max_project{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+.projectbut {
+    background-color: rgb(56, 109, 153);
+    color: rgb(38, 62, 117);
+    cursor: pointer;
+    padding: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0px auto;
+    margin-left: 10%;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.5s;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: rgb(255, 255, 255) 3px dotted;
+    background-image: url(../images/12.jpg);
+    border-radius: 10px;
+}
+  
+.active, .projectbut:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(58, 152, 165);
+    background-image: url(../images/pngtree-vintage-flowers-flower-shading-shading-pattern-image_17431.jpg);
+}
+
+.projectbut:after {
+    content: '+';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '-';
+}
+
+.projectrange {
+    margin: 0px auto;
+    margin-left: 10%;
+    width: 80%;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.384);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.pjbst{
+    float: left;
+    width: 230px;
+    margin-top: 20px;
+    border-right: solid 3px whitesmoke;
+    margin-right: 30px;
+}
+.pjbst1{
+    margin-top: 20px;
+}
+
+.projecttext{
+    font-size: 20px;
+    text-indent: 40px;
+    width: 43%;
+    padding: 3%;
+    float: left;
+}
+.projectimg{
+    width: 48%;
+    float: right;
+    /*background-color: black;*/
+    overflow: hidden;
+    margin-right: 0px;
+}
+.projectimg img{
+    width: 550px;
+    float: left;
+    margin-right: 10px;
+
+}
+.marquee{
+    margin-top: 50px;
+    float: left;
+    width: 1700px;
+    animation: movemarquee 15s ease-out;
+    animation-iteration-count: infinite;
+    
+}
+.marquee1{
+    float: left;
+    width: 1700px;
+    animation: movemarquee 15s ease-out;
+    animation-iteration-count: infinite;
+}
+.marquee2{
+    float: left;
+    width: 2800px;
+    animation: movemarquee 30s ease-out;
+    animation-iteration-count: infinite;
+}
+.marquee2:hover{
+    animation-play-state: paused;
+}
+.marquee1:hover{
+    animation-play-state: paused;
+}
+.marquee:hover{
+    animation-play-state: paused;
+}
+@-webkit-keyframes movemarquee{
+    from{
+        right: -100%;
+        transform: translateX(0%);
+    }
+    to{
+        right:  0;
+        transform: translateX(-100%);
+    }
+}
+.coffeebut{
+    font-family: 'COLONNA';
+    width:140px;
+    height: 50px;
+    padding: 0px;
+    margin-top: 130px;
+    margin-right: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    box-shadow: 15px 10px 1px rgb(64, 97, 158);
+    background-color: rgb(52, 68, 78);
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(202, 202, 202) 1px 1px 1px;
+    float: right;
+    text-align: center;
+    font-size:24px;
+    transition: 1s;
+    font-weight: bold;
+    border-top-left-radius: none;
+    border-bottom-left-radius: none;
+    position: relative;
+    bottom: 90px;
+    right: 0px;
+    /*background-image: url("../images/12.jpg");*/
+    background-image: url("../images/stone.jpg");
+
+}
+.coffeebut:hover{
+    width: 140px;
+    height: 48px;
+    font-size: 22px;
+    color: rgb(0, 46, 65);
+    /*border:rgb(52, 68, 78) solid;*/
+   
+}
+.coffeebut1:hover .myfont2{
+    animation: show linear 1s ;
+    animation-iteration-count: infinite;
+}
+.myfont2{
+    float:left;
+    padding-top: 5px;
+}
+.libbut1{
+    margin-bottom: 30px;
+}
+.libbut{
+    font-family: 'COLONNA';
+    width:140px;
+    height: 50px;
+    padding: 0px;
+    margin-top: -20px;
+    margin-right: 700px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    box-shadow: 15px 10px 1px rgb(64, 97, 158);
+    background-color: rgb(52, 68, 78);
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(202, 202, 202) 1px 1px 1px;
+    float: right;
+    text-align: center;
+    font-size:24px;
+    transition: 1s;
+    font-weight: bold;
+    border-top-left-radius: none;
+    border-bottom-left-radius: none;
+    position: relative;
+    background-image: url("../images/stone.jpg");
+    bottom: 80px;
+
+}
+.libbut:hover{
+    width: 140px;
+    height: 48px;
+    font-size: 22px;
+    color: rgb(0, 46, 65);
+    /*border:rgb(52, 68, 78) solid;*/
+   
+}
+.libbut1:hover .myfont2{
+    animation: show linear 1s ;
+    animation-iteration-count: infinite;
+}
+.justaline{
+    margin-top: 100px;
+    width: 100%;
+    height: 10px;
+    background-color: steelblue;
+    background-image: url("../images/pngtree-vintage-flowers-flower-shading-shading-pattern-image_17431.jpg");
+    margin-bottom: 80px;
+    
+}
+.justaline ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.justaline ul>div{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(52, 68, 78);
+}
+.justaline li{
+    cursor:pointer;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    border-radius: 50px;
+    background-color: rgb(238, 238, 238);
+    float: left;
+    top: -22px;
+    
+}
+.justaline li:hover li>div{
+    background-color: lightseagreen;
+}
+.justalinedot{
+    width: 100px;
+    margin: 0px auto;
+    margin-left: 10px;
+}
+.justaline li>div{
+    width: 25px;
+    height: 25px;
+    
+    background-image: url("../images/pngtree-vintage-flowers-flower-shading-shading-pattern-image_17431.jpg");
+    border-radius: 100%;
+    margin: 12.5px;
+}
+.justaline li:hover div{
+    transition: 1s;
+    background-image: url("../images/stone.jpg");
+
+    animation: bignrotate 1s ease-out;
+    animation-iteration-count: infinite;
+}
+.nexpeb{
+    margin: 0px auto;
+    margin-left: 50px;
+    position: relative;
+    left: 0px;
+}
+@-moz-keyframes bignrotate{
+    from{
+        transform: scale(1);
+        transform: rotate(0deg);
+    }
+    to{
+        transform: scale(3);
+        transform: rotate(360deg);
+    }
+}
+.expepicrange{
+    width: 100%;
+    height:800px;
+   /* background-color: cadetblue;*/
+    margin-top: 50px;
+    display: none;
+    margin-bottom: 80px;
+    padding: 60px;
+}
+.club ul{
+    list-style: none;
+}
+.clubicon{
+    height: 350px; 
+    width: auto;
+    float: left;
+    margin: 0px auto;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    transition: 1s ease-in-out;
+    padding-left: 30px;
+}
+.clubicon:hover{
+    padding-left: 20px;
+}
+.clubspace{
+    width: 80%;
+    height: 700px;
+    float: left;
+    margin: 0px auto;
+    padding: 50px;
+}
+.club li{
+    border-left: solid 5px rgb(31, 51, 105);
+    padding: 20px;
+    font-size: 35px;
+    margin: 20px;
+    font-weight: bold;
+    color: rgb(52, 68, 78) ;
+    padding-left: 50px;
+    width: 280px;
+}
+.club li:hover{
+    background-color: rgba(255, 240, 245, 0.678);
+    transition: 0.5s ease-in-out;
+    color: rgb(120, 179, 199);
+}
+.club li div{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.expepicrange h1{
+    font-size: 100px;
+    text-align: center;
+}
+.expepicrange h1:hover{
+    transition: 0.5s ease-in-out;
+    color: lightseagreen;
+}
+.club{
+    float: left;
+    width: 400PX;
+}
+.clubimgframe {
+    margin: 30px auto;
+    width: 800px;
+    height: 500px;
+    position: relative;
+    border: 20px solid;
+    border-color: #fff;
+    border-bottom-width: 100px;
+    background-color: #f5f5f5;
+    box-shadow: #666 0 0 5px;
+    float: left;
+}
+
+.mySlides1, .mySlides2 {
+    display: none
+}
+.mySlides1 img {
+    vertical-align: middle;
+    filter:drop-shadow(1.1);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: 0px auto;
+  margin-left: 150px;
+  margin-top: 50px;
+  float: left;
+  box-shadow: rgb(146, 146, 146) 0px 0px 10px;
+  height: 500px;
+  overflow: hidden;
+}
+.mySlides1 img:hover {
+    width: 700px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.clubtext{
+    padding-top: 80px;
+    width: 900px;
+    font-size: 25px;
+    float: right;
+    margin-right: 150px;
+    padding-right: 40px;
+    text-indent: 50px;
+}
+.univerclub img{
+    height: 300px;
+    box-shadow: 0px 0px 10px black;
+    margin-left: 10px;
+}
+.univerclub img:hover{
+    transition: 0.5s;
+    height: 350px;
+    
+}
+.univerclub{
+    padding-bottom: 80px;
+}
+.university{
+    height: 1200px;
+}
+.club a{
+    text-decoration: none;
+    color: inherit;
+}

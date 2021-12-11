@@ -1,0 +1,406 @@
+#skill{
+    background-color: aliceblue;
+    margin: 0px;
+    margin-right: 14px;
+    padding: 0px;
+    height: 1800px;
+    background-image: url("../images/greywood.jpg");
+    width: 44%;
+    /*border: white 4px solid;*/
+    border-radius: 20px;
+    float:left;
+    box-shadow: 0px 0px 10px;
+    position: relative;
+    
+    animation: moveskill linear 1s ;
+    animation-iteration-count:initial;
+    overflow: hidden;
+}
+@-webkit-keyframes moveskill{
+    from{
+        left: -900px;
+    }
+    to{
+        left: 0px;
+    }
+}
+@-webkit-keyframes moveskilltitle{
+    from{
+        top: -300px;
+    }
+    to{
+        top: 0px;
+    }
+}
+.skilltitle{
+    width: 75%;
+    height: 100px;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    background-image: url("../images/pngtree-vintage-flowers-flower-shading-shading-pattern-image_17431.jpg");
+    padding-right: 10px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    /*box-shadow: black 0px 1px 5px;*/
+    /*border: double white 5px;*/
+    border-top: none;
+    margin: 0px;
+    position: relative;
+    margin-bottom: 80px;
+    margin-left: 70px;
+    font-family: 'CASTELAR','COLONNA';
+    
+    animation: moveskilltitle linear 1s ;
+    animation-iteration-count:initial;
+}
+
+@-webkit-keyframes skillwidth{
+    from{
+        width:0px;
+    }
+    to{
+        width: 50%;
+    }
+}
+.skilltitle:hover{
+    transition: ease-in 1s;
+    color: rgb(185, 173, 230);
+}
+.skill1{
+    width: 100%;
+    height: 750px;
+}
+.skill2{
+    width: 100%;
+    height: 900px;
+}
+.anotherskill{
+    margin:0px auto;
+    width: 50%;
+    height: 80px;
+    color: rgb(0, 106, 128);
+    background-image: url("../images/unnamed.jpg");
+    box-shadow: 0px 3px 10px black;
+    font-size: 50px;
+    padding-top:20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+    margin-left: 50px;
+    font-weight: bold;
+    padding-right: 20px;
+    animation:skillwidth linear 1s ;
+    animation-iteration-count:initial;
+    margin-left: 0px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.programskill{
+    
+    margin:0px auto;
+    width: 50%;
+    height: 80px;
+    color: rgb(0, 71, 151);
+    margin-top: 50px;
+    margin-left: 0px;
+    background-image: url("../images/unnamed.jpg");
+    border-top-right-radius: 20px;
+    font-weight: bold;
+    /*
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 10px;*/
+    border-bottom-right-radius: 20px;
+    padding-right: 20px;
+    /*border-radius: 10px;*/
+    box-shadow: 0px 3px 10px black;
+    font-size: 50px;
+    padding-top:20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    animation:skillwidth linear 1s ;
+    animation-iteration-count:initial;
+    
+}
+@-webkit-keyframes skillrotate{
+    0%{
+        transform: rotate(5deg);
+    }
+    50%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.subskill:hover{
+    transition: 1s;
+    animation: skillrotate  1s ease-out;
+    animation-iteration-count: infinite;
+    color: rgb(94, 180, 197);
+}
+.skill1content{
+    margin: 20px;
+}
+.programskill1{
+    background-image: url("../images/pngtree-vintage-flowers-flower-shading-shading-pattern-image_17431.jpg");
+    width:100%;
+    height: 80px;
+}
+
+.centercircle{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    background-color:rgba(135, 180, 222, 0.301);
+}
+.warp{
+    width: 100px;
+    height: 180px;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+}
+.left{
+    left: 0px;
+}
+.right{
+    right: 0px;
+}
+.circle{
+    width: 140px;
+    height: 140px;
+    border:20px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    transform: rotate(45deg);
+    background-color: rgba(255, 255, 255, 0.137);
+}
+.rc{
+    border-top:20px solid rgb(55, 87, 141);
+    border-right:20px solid rgb(55, 87, 141);
+    right:0;
+    
+}
+.lc{
+    border-top:20px solid rgb(55, 87, 141);
+    border-left:20px solid rgb(55, 87, 141);
+    left:0;
+    animation: rotatecircle linear 1s ;
+    animation-iteration-count: 1;
+    transform: rotate(-135deg);
+    transition: 1s;
+}
+.lc1{
+    border-top:20px solid rgb(55, 87, 141);
+    border-left:20px solid rgb(55, 87, 141);
+    left:0;
+    animation: rotatecircle linear 1s ;
+    animation-iteration-count: 1;
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+.csharp{
+    width: 180px;
+    height: 120px;
+    padding-top: 60px;
+    font-size: 40px;
+    text-align: center;
+    background-color: none;
+    position: relative;
+    border-radius: 100%;
+    background-color: rgba(223, 211, 201, 0.432);
+    float: left;
+    margin: 50px;
+    margin-left: 100px;
+}
+.java{
+    width: 180px;
+    height: 120px;
+    padding-top: 60px;
+    font-size: 40px;
+    text-align: center;
+    background-color: none;
+    position: relative;
+    border-radius: 100%;
+    background-color: rgba(223, 211, 201, 0.432);
+    float: left;
+    margin: 50px;
+}
+.webdesign{
+    width: 180px;
+    height: 120px;
+    padding-top: 60px;
+    font-size: 20px;
+    text-align: center;
+    background-color: none;
+    position: relative;
+    border-radius: 100%;
+    background-color: rgba(223, 211, 201, 0.432);
+    float: left;margin: 50px;
+    
+    margin-bottom: 0px;
+    margin-left: 100px;
+}
+.c{
+    width: 180px;
+    margin: 50px;
+    height: 120px;
+    padding-top: 60px;
+    font-size: 40px;
+    text-align: center;
+    background-color: none;
+    position: relative;
+    border-radius: 100%;
+    background-color: rgba(223, 211, 201, 0.432);
+    float: left;
+    margin-bottom: 0px;
+}
+.skillc{
+    box-shadow: black 0px 0px 10px;
+}
+.skillc:hover .lc{
+    animation: rotatecircle linear 3s ;
+    animation-iteration-count:infinite;
+}
+.skillc:hover .lc1{
+
+    animation: rotatecircle1 linear 3s ;
+    animation-iteration-count:infinite;
+}
+@-webkit-keyframes rotatecircle1{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(270deg);
+    }
+}
+.skillc:hover .rc{
+
+    animation: rotatecircle3 linear 1s ;
+    animation-iteration-count:infinite;
+}
+.s2{
+    margin: 20px;
+    width: 100%;
+    padding: 30px;
+    height: 50px;
+}
+.s2>img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    float: left;
+}
+
+.s2>p {
+    width: 300px;
+    height: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(52, 68, 78) ;
+}
+.skillbar{
+    margin: 0px auto;
+    float: left;
+    width: 83%;
+    height: 30px;
+    /*box-shadow: 0px 0px 10px;*/
+    border-radius: 10px;
+    border: solid rgb(74, 98, 167) 5px;
+    background-color: rgba(228, 204, 190, 0.109);
+    text-align: right;
+    padding-right: 10px;
+    font-size: 28px;
+    animation: color ease-out 4s ;
+    animation-iteration-count:infinite;
+    animation-fill-mode: forwards;
+}
+.skillbar1{
+    width: 75%;
+    margin: 4px;
+    height: 22px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(185, 173, 230);
+    float: left;
+    
+    animation: length ease-out 3s ;
+    animation-iteration-count:1;
+}
+.skillbar2{
+    width: 85%;
+    margin: 4px;
+    height: 22px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(76, 170, 182);
+    float: left;
+    
+    animation: length ease-out 3s ;
+    animation-iteration-count:1;
+}
+.skillbar3{
+    width: 80%;
+    margin: 4px;
+    height: 22px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(185, 173, 230);
+    float: left;
+    
+    animation: length ease-out 3s ;
+    animation-iteration-count:1;
+}
+.skillbar4{
+    width: 89%;
+    margin: 4px;
+    height: 22px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(76, 170, 182);
+    float: left;
+    animation: length ease-out 3s ;
+    animation-iteration-count:1;
+}
+.skb:hover{
+    
+    transition: 5s;
+    animation: length ease-out 5s ;
+    animation-iteration-count:infinite;
+}
+.skb:hover{
+    color:rgb(109, 142, 163);
+}
+@-webkit-keyframes rotatecircle{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(225deg);
+    }
+}
+@-webkit-keyframes length{
+    from{
+        width: 0%;
+    }
+    to{
+        width:inherit;
+    }
+}
+@-webkit-keyframes color{
+    0%{
+        box-shadow: 0px 0px 5px rgb(0, 234, 255);
+    }
+    50%{
+        box-shadow: 0px 0px 5px rgb(195, 0, 255);
+    }
+    100%{
+        box-shadow: 0px 0px 5x rgb(0, 234, 255);
+    }
+}
